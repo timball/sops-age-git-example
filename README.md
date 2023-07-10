@@ -1,13 +1,16 @@
-# git + sops + secrets
+# git + sops + secrets + git
 
 #### --timball@gmail.com
 #### Sun  9 Jul 21:41:48 EDT 2023
 
 ## overview
 We are trying to setup a repo with sane password storage and not be a big PITA to use. 
-We'll be using `sops` and `age` to do the encryption. We wrote some bash scripts
+While it is debatable if we want to upload passwords to a git repot at all, we can
+all agree that we should never upload unencrypted passwords. 
+
+In these examples we'll be using `sops` and `age` to do the encryption. We wrote some bash scripts
 to run as git filters such that on the local filesystem files can be decrypted
-and will automatically be encrypted before being committed. 
+and will automatically be encrypted before being committed.
 
 git commits and diffs should work as expected. 
 All secrets stored in git will be encrypted, but the local copies will be in clear text if you have the right key
