@@ -1,4 +1,4 @@
-# git + sops + secrets + git
+# git + sops + age + secrets
 
 #### --timball@gmail.com
 #### Sun  9 Jul 21:41:48 EDT 2023
