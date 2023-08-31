@@ -26,7 +26,7 @@ the `secrets/age-key.txt` needs to be distributed out of band.
 ```sh
     $ age-keygen -o secrets/age-key.txt
     $ age-keygen -y -o secrets/public-age-keys.txt secrets/age-key.txt
-    $ echo "secrets/age-key.txt" >> ~/.gitignore
+    $ echo "secrets/age-key.txt" >> .gitignore
     $ git add secrets/public-age-keys.txt
     $ git commit -m "add public key to secrets/"
 ```
